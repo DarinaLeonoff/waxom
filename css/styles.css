@@ -1,1 +1,195 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+@import url(c:\Users\Андрей\Desktop\даша\geekBrains\block5\waxom\css\fonts.css);
+body {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title {
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.button {
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 21px 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset 0px -3px 0 0 #736357;
+          box-shadow: inset 0px -3px 0 0 #736357;
+  background-color: #998675;
+  border-radius: 3px;
+  line-height: 1.64;
+}
+
+.top-slider {
+  position: relative;
+  background-color: #555556;
+}
+
+.header {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.header-box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-menu {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.header-item {
+  margin-left: 30px;
+}
+
+.header-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.header-icons {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 28px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.carousel-caption {
+  right: 25%;
+  top: 40%;
+  left: 25%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../img/left.png);
+  width: 40px;
+  height: 73px;
+}
+
+.carousel-control-prev-icon:hover {
+  background-image: url(../img/right.png);
+  width: 40px;
+  height: 73px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.carousel-control-next-icon {
+  background-image: url(../img/left.png);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 40px;
+  height: 73px;
+}
+
+.carousel-control-next-icon:hover {
+  background-image: url(../img/right.png);
+  width: 40px;
+  height: 73px;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.carousel-indicators li {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  opacity: 0.5;
+  background-color: #ffffff;
+}
+
+.carousel-indicators .active {
+  border: solid 2px #d3c1ad;
+  background-color: transparent;
+  margin: 8px 3px;
+}
+
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo-top {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.promo-main {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 19px;
+}
+
+.promo-text {
+  width: 565px;
+}
+
+.promo-button {
+  margin-top: 52px;
+}
+/*# sourceMappingURL=styles.css.map */
