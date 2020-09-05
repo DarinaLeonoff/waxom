@@ -23,6 +23,7 @@ p{
 display: flex;
 }
 
+
 .title{
     font-family: Raleway;
     font-size: 30px;
@@ -265,6 +266,9 @@ left: 25%;
     &-box{
         justify-content: space-between;
     }
+    &-info{
+        max-width: 700px;
+    }
     &-title{
         font-size: 28px;
         text-align: left;
@@ -277,6 +281,7 @@ left: 25%;
     &-button{
         height: max-content;
         align-self: center;
+        height: max-content;
     }
 }
 

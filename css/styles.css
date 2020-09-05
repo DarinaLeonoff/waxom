@@ -337,6 +337,10 @@ p {
           justify-content: space-between;
 }
 
+.purchase-info {
+  max-width: 700px;
+}
+
 .purchase-title {
   font-size: 28px;
   text-align: left;
@@ -355,6 +359,7 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  height: max-content;
 }
 
 .portfolio {
