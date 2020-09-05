@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-ExtraLight.woff2') format('woff2'),
-        url('Montserrat-ExtraLight.woff') format('woff');
+    src: url('../fonts/Montserrat/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-ExtraLight.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-ExtraLight.ttf') format('ttf');
     font-weight: 200;
     font-style: normal;
     font-display: optional;
@@ -9,8 +10,9 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-Light.woff2') format('woff2'),
-        url('Montserrat-Light.woff') format('woff');
+    src: url('../fonts/Montserrat/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Light.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Light.ttf') format('ttf');
     font-weight: 300;
     font-style: normal;
     font-display: optional;
@@ -18,8 +20,9 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway-Bold.woff2') format('woff2'),
-        url('Raleway-Bold.woff') format('woff');
+    src: url('../fonts/Raleway/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-Bold.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
     font-display: optional;
@@ -27,8 +30,9 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway-Medium.woff2') format('woff2'),
-        url('Raleway-Medium.woff') format('woff');
+    src: url('../fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Medium.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-Medium.ttf') format('ttf');
     font-weight: 500;
     font-style: normal;
     font-display: optional;
@@ -36,8 +40,9 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway-Light.woff2') format('woff2'),
-        url('Raleway-Light.woff') format('woff');
+    src: url('../fonts/Raleway/Raleway-Light.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Light.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-Light.ttf') format('ttf');
     font-weight: 300;
     font-style: normal;
     font-display: optional;
@@ -45,8 +50,9 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway-SemiBold.woff2') format('woff2'),
-        url('Raleway-SemiBold.woff') format('woff');
+    src: url('../fonts/Raleway/Raleway-SemiBold.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-SemiBold.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-SemiBold.ttf') format('ttf');
     font-weight: 600;
     font-style: normal;
     font-display: optional;
@@ -54,8 +60,9 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway-ExtraBold.woff2') format('woff2'),
-        url('Raleway-ExtraBold.woff') format('woff');
+    src: url('../fonts/Raleway/Raleway-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-ExtraBold.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-ExtraBold.ttf') format('ttf');
     font-weight: 800;
     font-style: normal;
     font-display: optional;

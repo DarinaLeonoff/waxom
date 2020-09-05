@@ -4,8 +4,8 @@
 body{
     font-family: 'Montserrat';
     font-weight: 300;
-    font-style: normal;
-    color: #ffffff;
+    line-height: 1.75;
+    color: $text;
 }
 
 .wrapper{
@@ -21,6 +21,12 @@ display: flex;
     font-family: Raleway;
     font-size: 30px;
     font-weight: 600;
+    color: $icon;
+    text-align: center;
+}
+
+.text-active{
+    color: $active;
 }
 
 .button{
@@ -38,6 +44,11 @@ display: flex;
   background-color: $button;
   border-radius: 3px;
   line-height: 1.64;
+  &:hover{
+      color: #fff;
+      text-decoration: none;
+      background-color: $active;
+  }
 }
 
 .top-slider{
@@ -67,9 +78,12 @@ padding-top: 40px;
 }
 &-link{
     color: #ffffff;
-    text-decoration: none;
     font-size: 14px;
     line-height: 14px;
+    &:hover{
+        text-decoration: none;
+        color: $active;
+    }
 }
 &-icons{
     height: max-content;
@@ -79,6 +93,10 @@ padding-top: 40px;
     width: 24px;
     height: 24px;
     margin-left: 28px;
+    fill: #fff;
+    &:hover{
+        fill: $active;
+    }
 }
 }
 .logo{
@@ -135,11 +153,13 @@ left: 25%;
         font-size: 36px;
         font-weight: 500;
         margin-bottom: 14px;
+        color: #fff;
     }
     &-main{
         font-size: 52px;
         font-weight: 800;
         margin-bottom: 19px;
+        color: #fff;
     }
     &-text{
         width: 565px;
@@ -149,5 +169,90 @@ left: 25%;
     }
 }
 
+.services{
+    padding: 80px 0;
+    &-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-card{
+        width: 270px;
+        min-height: 210px;
+        text-align: center;
+        &::after{
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 70px;
+            height: 3px;
+            background-color: $line;
+        }
+        &:hover .services-icon{
+            fill: $active;
+        }
+        &:hover .services-name{
+            color: $active;
+        }
+        &:hover::after{
+            background-color: $active;
+        }
+    }
+    &-icon{
+        fill: $icon;
+        margin-bottom: 29px;
+        width: 53px;
+        height: 49px;
+    }
+    &-name{
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 19px;
+    }
+    &-text{
+        font-size: 14px;
+        line-height: 1.71;
+        margin-bottom: 30px;
+    }
+    
+}
 
+.realisation{
+    padding-top: 83px;
+    background-color: $block-back;
+    &-text{
+        width: 760px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 24px;
+        margin-bottom: 122px;
+    }
+    &-images{
+        position: relative;
+        display: flex;
+    }
+    &-img3{
+        position: absolute;
+        left: 25%;
+        top: -82px;
+    }
+}
 
+.purchase{
+    padding: 48px 0;
+    background-image: linear-gradient(to right, #211b19, #4e3427);
+    &-box{
+        justify-content: space-between;
+    }
+    &-title{
+        font-size: 28px;
+        text-align: left;
+        color: white;
+    }
+    &-text{
+        font-size: 18px;
+        color: $tipe;
+    }
+    &-button{
+        height: max-content;
+    }
+}
