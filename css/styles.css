@@ -1,9 +1,64 @@
-@charset "UTF-8";
-@import url(c:\Users\Андрей\Desktop\даша\geekBrains\block5\waxom\css\fonts.css);
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-ExtraLight.woff") format("woff"), url("../fonts/Montserrat/Montserrat-ExtraLight.ttf") format("ttf");
+  font-weight: 200;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway/Raleway-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway/Raleway-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway/Raleway-Light.woff") format("woff"), url("../fonts/Raleway/Raleway-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway/Raleway-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway/Raleway-ExtraBold.ttf") format("ttf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: optional;
+}
+
 body {
   font-family: 'Montserrat';
   font-weight: 300;
   line-height: 1.75;
+  font-size: 16px;
   color: #8c8c8c;
   margin: 0;
   padding: 0;
@@ -69,10 +124,6 @@ p {
   color: #fff;
   text-decoration: none;
   background-color: #c7b299;
-}
-
-.hidden {
-  display: none;
 }
 
 .top-slider {
@@ -325,10 +376,13 @@ p {
   top: -82px;
 }
 
-.purchase {
-  padding: 48px 0;
+.gradient {
   background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
   background-image: linear-gradient(to right, #211b19, #4e3427);
+}
+
+.purchase {
+  padding: 48px 0;
 }
 
 .purchase-box {
@@ -389,10 +443,18 @@ p {
   padding: 30px;
   background-color: #fbfaf8;
   position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
 }
 
 .portfolio-info::before {
   content: '';
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-property: border-bottom-color;
+  transition-property: border-bottom-color;
   display: block;
   border: 30px solid transparent;
   border-bottom-color: #fbfaf8;
@@ -428,6 +490,8 @@ p {
 }
 
 .portfolio-hover {
+  -webkit-transition: 1s;
+  transition: 1s;
   width: 370px;
   height: 237px;
   padding: 106px 144px;
@@ -435,6 +499,9 @@ p {
           box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
 }
 
 .portfolio-icon {
@@ -463,7 +530,7 @@ p {
 }
 
 .portfolio-card:hover .portfolio-hover {
-  display: block;
+  opacity: 1;
 }
 
 .tag {
@@ -491,5 +558,139 @@ p {
   background-color: #998675;
   border-color: #998675;
   color: #fff;
+}
+
+.presentation {
+  position: relative;
+}
+
+.presentation-info {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation-button {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 44px;
+}
+
+.presentation-title, .presentation-text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.presentation-time {
+  color: #c7b299;
+  margin-top: 11px;
+}
+
+.mobile {
+  padding-top: 79px;
+}
+
+.mobile-info {
+  margin-top: 100px;
+  margin-left: 30px;
+  width: 670px;
+}
+
+.mobile-title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.mobile-list {
+  list-style: none;
+  margin-top: 45px;
+}
+
+.mobile-item {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-item::before {
+  content: url(../img/list-arrow.png);
+  margin-right: 30px;
+  height: 21px;
+}
+
+.statistics {
+  padding-top: 69px;
+  padding-bottom: 60px;
+}
+
+.statistics-box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.statistics-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statistics-card img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.statistics-card::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.statistics-number {
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 0.75;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.statistics-name {
+  margin-top: 21px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: #c7b299;
 }
 /*# sourceMappingURL=styles.css.map */

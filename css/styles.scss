@@ -1,10 +1,75 @@
 @import "vars";
-@import "fonts";
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-ExtraLight.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-ExtraLight.ttf') format('ttf');
+    font-weight: 200;
+    font-style: normal;
+    font-display: optional;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/Montserrat/Montserrat-Light.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: optional;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: optional;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Medium.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: optional;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Light.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-Light.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: optional;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-SemiBold.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-SemiBold.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: optional;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Raleway/Raleway-ExtraBold.woff') format('woff'),
+        url('../fonts/Raleway/Raleway-ExtraBold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: optional;
+}
+
+
 
 body{
     font-family: 'Montserrat';
     font-weight: 300;
     line-height: 1.75;
+    font-size: 16px;
     color: $text;
     margin: 0;
     padding: 0;
@@ -67,7 +132,7 @@ display: flex;
 }
 
 .hidden{
-    display: none;
+   
 }
 
 .top-slider{
@@ -138,7 +203,6 @@ left: 25%;
     transform: rotate(180deg);
     }
 }
-
 .carousel-control-next-icon{
     background-image: url(../img/left.png);
     transform: rotate(180deg);
@@ -260,9 +324,12 @@ left: 25%;
     }
 }
 
+.gradient{
+    background-image: linear-gradient(to right, #211b19, #4e3427);
+}
+
 .purchase{
     padding: 48px 0;
-    background-image: linear-gradient(to right, #211b19, #4e3427);
     &-box{
         justify-content: space-between;
     }
@@ -304,8 +371,12 @@ left: 25%;
         padding: 30px;
         background-color: $block-back;
         position: relative;
+        transition: 1s;
+        transition-property: background-color;
         &::before{
             content: '';
+            transition: 1s;
+            transition-property: border-bottom-color;
             display: block;
             border: 30px solid transparent;
             border-bottom-color: $block-back;
@@ -337,12 +408,15 @@ left: 25%;
         margin: 0 auto;
     } 
     &-hover{
+        transition: 1s;
         width: 370px;
         height: 237px;
         padding: 106px 144px;
         box-sizing: border-box;
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
+        opacity: 0;
+        transition-property: opacity;
     }
     &-icon{
         fill: #fff;
@@ -366,7 +440,7 @@ left: 25%;
     color: $active;
 }
 .portfolio-card:hover .portfolio-hover{
-    display: block;
+opacity: 1;
 }
 
 .tag{
@@ -393,3 +467,100 @@ left: 25%;
     }
 }
 
+.presentation{
+    position: relative;
+    &-video{
+    }
+    &-info{
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-button{
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: none;
+        border-radius: 50%;
+        width: max-content;
+        margin-bottom: 44px;
+    }
+    &-title,
+    &-text{
+        color: #fff;
+        text-align: center;
+        margin-bottom: 29px;
+    }
+    &-time{
+        color: $active;
+        margin-top: 11px;
+    }
+}
+
+.mobile{
+   padding-top: 79px;
+    &-info{
+        margin-top: 100px;
+        margin-left: 30px;
+        width: 670px;
+    }
+    &-title{
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    &-list{
+        list-style: none;
+        margin-top: 45px;
+    }
+    &-item{
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        &::before{
+            content: url(../img/list-arrow.png);
+            margin-right: 30px;
+            height: 21px;
+        }
+    }
+}
+
+.statistics{
+    padding-top: 69px;
+    padding-bottom: 60px;
+    &-box{
+        justify-content: space-between;
+    }
+    &-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & img{
+            width: max-content;
+        }
+        &::after{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+    }
+    }
+    &-number{
+        font-size: 48px;
+        font-weight: 200;
+        line-height: 0.75;
+        color: #fff;
+        margin-top: 30px;
+    }
+    &-name{
+        margin-top: 21px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.43;
+        color: $active;
+    }
+}
