@@ -205,7 +205,7 @@
       </nav>
       <section class="portfolio-box box">
         <div class="portfolio-card">
-          <div class="portfolio-hover hidden">
+          <div class="portfolio-hover">
             <a href="#"><svg class="portfolio-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
               height="26px">
               <path fill-rule="evenodd"
@@ -225,7 +225,7 @@
         </div>
 
         <div class="portfolio-card">
-          <div class="portfolio-hover hidden">
+          <div class="portfolio-hover">
             <a href="#"><svg class="portfolio-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
               height="26px">
               <path fill-rule="evenodd"
@@ -245,7 +245,7 @@
         </div>
 
         <div class="portfolio-card">
-          <div class="portfolio-hover hidden">
+          <div class="portfolio-hover">
             <a href="#"><svg class="portfolio-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
               height="26px">
               <path fill-rule="evenodd"
@@ -265,7 +265,7 @@
         </div>
 
         <div class="portfolio-card">
-          <div class="portfolio-hover hidden">
+          <div class="portfolio-hover">
             <a href="#"><svg class="portfolio-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
               height="26px">
               <path fill-rule="evenodd"
@@ -285,7 +285,7 @@
         </div>
 
         <div class="portfolio-card">
-          <div class="portfolio-hover hidden">
+          <div class="portfolio-hover">
             <a href="#"><svg class="portfolio-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
               height="26px">
               <path fill-rule="evenodd"
@@ -305,7 +305,7 @@
         </div>
 
         <div class="portfolio-card">
-          <div class="portfolio-hover hidden">
+          <div class="portfolio-hover">
             <a href="#"><svg class="portfolio-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px"
               height="26px">
               <path fill-rule="evenodd"
@@ -333,11 +333,13 @@
   </section>
 
   <section class="presentation">
-      <video class="presentation-video" poster="img/video-back.jpg" preload>
-    
+      <video class="presentation-video" preload controls>
+         <source src="img/Monument Valley - 310.mp4" type="video/mp4" >
+          <source src="img/Monument Valley - 310.webm" type="video/webm">
       </video>
-      <div class="presentation-info">
-      <button class="presentation-button"><svg 
+
+      <div id="hidden" class="presentation-info">
+      <button  class="presentation-button" onclick="getElementById('hidden').classList.add('hidden')"><svg 
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         width="70px" height="70px">
@@ -508,6 +510,7 @@
       </div>
     </section>
   </footer>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
