@@ -76,10 +76,12 @@ p{
 .wrapper{
     margin: 0 auto;
     max-width: 1200px;
+    padding: 0 5px;
 }
 
 .box{
 display: flex;
+flex-wrap: wrap;
 }
 
 .hidden{
@@ -109,6 +111,7 @@ display: flex;
 .button{
     display: inline-block;
     width: max-content;
+    height: max-content;
   font-family: Raleway;
   text-transform: uppercase;
   font-size: 14px;
@@ -161,7 +164,18 @@ padding-top: 40px;
         text-decoration: none;
         color: $active;
     }
-}
+}   
+&-burger{
+        display: none;
+        align-self: center;
+        &-item{
+            display: block;
+    height: 4px;
+    margin-bottom: 2px;
+    width: 35px;
+    background-color: white;
+        }
+    }
 &-icons{
     height: max-content;
     align-self: center;
@@ -185,6 +199,7 @@ right: 25%;
 top: 40%;
 left: 25%;
 }
+
 .carousel-control-prev-icon{
     background-image: url(../img/left.png);
     width: 40px;
@@ -304,16 +319,16 @@ left: 25%;
     }
     &-img1{
         position: relative;
-        left: -20px;
+        left: -2%;
     }
     &-img2{
         position: relative;
-        left: -322px;
+        left: -27%;
     }
     &-img3{
         position: absolute;
         left: 18%;
-        top: -82px;
+        top: -20.5%;
     }
 }
 
@@ -398,6 +413,7 @@ left: 25%;
         color: $tagname;
     }
     &-btn{
+        display: block;
         margin: 0 auto;
     } 
     &-hover{
@@ -444,6 +460,7 @@ opacity: 1;
         width: 120px;
         padding: 10px 0;
         margin-left: 10px;
+        margin-bottom: 10px;
         text-align: center;
         border-radius: 3px;
         border: solid 1px #ebebeb;
@@ -467,11 +484,10 @@ opacity: 1;
     }
     &-info{
         position: absolute;
-        top: 25%;
+        top: 20%;
         left: 0;
         width: 100%;
         height: 100%;
-        padding-top: 10em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -827,4 +843,17 @@ opacity: 1;
     font-weight: 300;
     line-height: 1.54;
     color: #555555;
+}
+
+@media screen and (max-width: 600px){
+    .wrapper{
+        padding: 0 20px;
+    }
+    .header-menu,
+    .header-icons{
+        display: none;
+    }
+    .header-burger{
+        display: block;
+    }
 }
