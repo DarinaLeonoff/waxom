@@ -101,7 +101,7 @@ flex-wrap: wrap;
 }
 
 .tip{
-    width: 770px;
+    max-width: 770px;
     text-align: center;
     margin: 0 auto;
     margin-top: 24px;
@@ -147,6 +147,9 @@ padding-top: 40px;
 &-menu{
     height: max-content;
     align-self: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 &-list{
     list-style: none;
@@ -190,6 +193,13 @@ padding-top: 40px;
     }
 }
 }
+// .search-field{
+//   display: none;
+//   &:target{
+//     display: block;
+//   }
+//   }
+
 .logo{
     width: 200px;
 }
@@ -454,6 +464,8 @@ opacity: 1;
 
 .tag{
     text-align: center;
+    width: 85%;
+    margin: 0 auto;
     &-item{
         font-size: 14px;
         line-height: 1.5;
@@ -843,17 +855,99 @@ opacity: 1;
     font-weight: 300;
     line-height: 1.54;
     color: #555555;
+    &::after{
+        content: '|';
+        margin: 0 5px;
+    }
+    &:last-child::after{
+        content: '|';
+        display: none;
+    }
+}
+.copy-block{
+    display: flex;
 }
 
 @media screen and (max-width: 600px){
     .wrapper{
         padding: 0 20px;
     }
-    .header-menu,
-    .header-icons{
+    .header-menu{
         display: none;
     }
     .header-burger{
         display: block;
+    }
+    input[type=checkbox]{
+        display: none;
+    }
+    .services-card{
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .realisation{
+        &-images{
+            display: block;
+        }
+        &-img{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    .purchase{
+        &-title,
+        &-text{
+            text-align: center;
+        }
+        &-button{
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+    .portfolio-card{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .mobile-img{
+        display: none;
+    }
+    .statistics{
+        &-box{
+        flex-direction: column;
+    }
+        &-card{
+            margin-bottom: 30px;
+        }
+    }
+    .posts-card{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .partners{
+      &-box{
+        flex-direction: column;
+    }  
+    &-img{
+        margin-bottom: 30px;
+    }
+    }
+    .footer{
+        &-top{
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 0;
+        }
+        &-bottom-box,
+        .copy-block{
+            flex-direction: column;
+            align-items: center;
+        }
+        .copy::after{
+            content: '|';
+            display: none;
+        }
     }
 }
