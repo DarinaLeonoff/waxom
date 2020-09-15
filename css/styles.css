@@ -234,6 +234,7 @@ p {
 
 .carousel-item {
   background-image: url(../img/slide-1.jpg);
+  background-color: #555556;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -242,7 +243,7 @@ p {
 
 .carousel-caption {
   position: unset;
-  padding-top: 300px;
+  padding-top: 250px;
 }
 
 .carousel-control-prev-icon {
@@ -608,6 +609,7 @@ p {
   width: 100%;
   min-height: 564px;
   background-image: url(../img/video-back.jpg);
+  background-color: #fbfaf8;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1113,7 +1115,7 @@ p {
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .wrapper {
     padding: 0 20px;
   }
@@ -1131,6 +1133,9 @@ p {
   }
   .promo-main {
     font-size: 25px;
+  }
+  .promo-button {
+    margin-top: 10px;
   }
   .services-card {
     margin: 0 auto;

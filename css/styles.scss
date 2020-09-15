@@ -207,6 +207,7 @@ left: 25%;
 
 .carousel-item{
     background-image: url(../img/slide-1.jpg);
+    background-color: $slider-back;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -214,7 +215,7 @@ left: 25%;
 }
 .carousel-caption {
     position: unset;
-    padding-top: 300px;
+    padding-top: 250px;
 }
 
 .carousel-control-prev-icon{
@@ -501,6 +502,7 @@ opacity: 1;
     width: 100%;
     min-height: 564px;
     background-image: url(../img/video-back.jpg);
+    background-color: $block-back;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -884,7 +886,7 @@ opacity: 1;
     display: flex;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
     .wrapper{
         padding: 0 20px;
     }
@@ -903,6 +905,9 @@ opacity: 1;
         }
         &-main{
             font-size: 25px;
+        }
+        &-button{
+            margin-top: 10px;
         }
     }
     .services-card{
