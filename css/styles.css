@@ -795,7 +795,7 @@ p {
   background-color: #362f2d;
 }
 
-.posts-card:hover .posts-data__dark {
+.posts-card:hover .posts__dark {
   opacity: 0;
 }
 
@@ -807,13 +807,13 @@ p {
   color: #ffffff;
 }
 
-.posts-data__dark, .posts-data__light {
+.posts__dark, .posts__light {
   position: absolute;
   top: 20px;
   left: 20px;
 }
 
-.posts-data__dark {
+.posts__dark {
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transition-property: opacity;
@@ -853,11 +853,11 @@ p {
   border-radius: 0 0 3px 3px;
 }
 
-.posts-data__light .posts-day {
+.posts__light .posts-day {
   background-color: #c7b299;
 }
 
-.posts-data__light .posts-month {
+.posts__light .posts-month {
   background-color: #a48d72;
 }
 

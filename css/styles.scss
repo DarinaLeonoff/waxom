@@ -633,7 +633,7 @@ opacity: 1;
         &:hover .posts-info{
             background-color: $block-active;
         }
-        &:hover .posts-data__dark{
+        &:hover .posts__dark{
             opacity: 0;
         }
         &:hover .posts-name{
@@ -643,13 +643,13 @@ opacity: 1;
             color: #ffffff;
         }
     }    
-    &-data__dark,
-    &-data__light{
+    &__dark,
+    &__light{
         position: absolute;
         top: 20px;
         left: 20px;
     }
-    &-data__dark{
+    &__dark{
         transition: 1s;
         transition-property: opacity;
     }
@@ -678,10 +678,10 @@ opacity: 1;
         padding: 6px 13px;
         border-radius:  0 0 3px 3px;
     }
-    &-data__light &-day{
+    &__light &-day{
         background-color: #c7b299;
     }
-    &-data__light &-month{
+    &__light &-month{
         background-color: #a48d72;
     }
     &-info{
