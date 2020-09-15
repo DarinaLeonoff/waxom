@@ -208,6 +208,7 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-left: 60px;
 }
 
 .header-icon {
@@ -229,6 +230,19 @@ p {
   right: 25%;
   top: 40%;
   left: 25%;
+}
+
+.carousel-item {
+  background-image: url(../img/slide-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: unset;
+  padding-top: 300px;
 }
 
 .carousel-control-prev-icon {
@@ -303,7 +317,7 @@ p {
 }
 
 .promo-text {
-  width: 565px;
+  width: 60%;
 }
 
 .promo-button {
@@ -591,9 +605,16 @@ p {
 
 .presentation {
   position: relative;
+  width: 100%;
+  min-height: 564px;
+  background-image: url(../img/video-back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .presentation-video {
+  display: none;
   width: 100%;
 }
 
@@ -624,6 +645,7 @@ p {
   width: -moz-max-content;
   width: max-content;
   margin-bottom: 44px;
+  outline: none;
 }
 
 .presentation-button:hover {
@@ -631,13 +653,14 @@ p {
           transition-duration: 1s;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+  outline: none;
+  border: none;
 }
 
 .presentation-title, .presentation-text {
   color: #fff;
   text-align: center;
   margin-bottom: 29px;
-  width: 565px;
 }
 
 .presentation-time {
@@ -1103,6 +1126,12 @@ p {
   input[type=checkbox] {
     display: none;
   }
+  .promo-top {
+    font-size: 20px;
+  }
+  .promo-main {
+    font-size: 25px;
+  }
   .services-card {
     margin: 0 auto;
     margin-bottom: 40px;
@@ -1130,6 +1159,9 @@ p {
   }
   .mobile-img {
     display: none;
+  }
+  .mobile-info {
+    margin: 0;
   }
   .statistics-box {
     -webkit-box-orient: vertical;
