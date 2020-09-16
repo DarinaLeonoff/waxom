@@ -67,6 +67,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 p{
@@ -390,8 +391,11 @@ left: 25%;
         justify-content: space-between;
     }
     &-card{
-        width: 370px;
+        max-width: 370px;
         margin-bottom: 30px;
+    }
+    & img{
+        width: 100%;
     }
     &-info{
         padding: 30px;
@@ -628,7 +632,7 @@ opacity: 1;
     }
     &-card{
         border: solid 1px #f8f8f8;
-        width: min-content;
+        max-width: 370px;
         position: relative;
         &:hover .posts-info{
             background-color: $block-active;
@@ -642,7 +646,10 @@ opacity: 1;
         &:hover .posts-text{
             color: #ffffff;
         }
-    }    
+    } 
+    & img{
+        width: 100%;
+    }   
     &__dark,
     &__light{
         position: absolute;
@@ -887,9 +894,6 @@ opacity: 1;
 }
 
 @media screen and (max-width: 500px){
-    .wrapper{
-        padding: 0 20px;
-    }
     .header-menu{
         display: none;
     }

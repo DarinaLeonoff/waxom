@@ -56,6 +56,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 p {
@@ -475,8 +476,12 @@ p {
 }
 
 .portfolio-card {
-  width: 370px;
+  max-width: 370px;
   margin-bottom: 30px;
+}
+
+.portfolio img {
+  width: 100%;
 }
 
 .portfolio-info {
@@ -785,9 +790,7 @@ p {
 
 .posts-card {
   border: solid 1px #f8f8f8;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  max-width: 370px;
   position: relative;
 }
 
@@ -805,6 +808,10 @@ p {
 
 .posts-card:hover .posts-text {
   color: #ffffff;
+}
+
+.posts img {
+  width: 100%;
 }
 
 .posts__dark, .posts__light {
@@ -1116,9 +1123,6 @@ p {
 }
 
 @media screen and (max-width: 500px) {
-  .wrapper {
-    padding: 0 20px;
-  }
   .header-menu {
     display: none;
   }
